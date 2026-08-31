@@ -62,6 +62,26 @@ const projects: Project[] = [
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format&fit=crop&q=80",
     link: "https://github.com/marwamousa240020/projects/tree/main/cv-robot-control",
   },
+  {
+    title: "Attention vs. Reliance in Emotion Models",
+    category: "Research / XAI",
+    categoryColor: "lavender",
+    description:
+      "Individual research project on shallow semantic reasoning in RoBERTa emotion classifiers. Benchmarked four architectural and training interventions against a fine-tuned baseline (macro-F1 0.890) and a keyword-only TF-IDF model (0.832) — none improved significantly. The headline finding: attention focus and integrated-gradients reliance move in opposite directions (r = −0.20, p = 0.026), showing attention heatmaps can misexplain what a model actually uses.",
+    tags: ["RoBERTa", "Integrated Gradients", "Focal Loss", "Bootstrap CI", "LaTeX"],
+    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80",
+    link: "https://github.com/marwamousa240020/projects/tree/main/attention-vs-reliance",
+  },
+  {
+    title: "NPEC Vision — Root Phenotyping MLOps",
+    category: "MLOps",
+    categoryColor: "peach",
+    description:
+      "Production MLOps system for the Netherlands Plant Eco-phenotyping Centre that segments plant roots with a U-Net and measures per-plant root length by skeletonization. Shipped as an installable Python package with a Typer CLI, FastAPI service and Streamlit frontend — trained on Azure ML with hyperparameter sweeps and a metric-gated model registry, then deployed local, on-premise and cloud with blue-green releases, drift monitoring and scheduled retraining.",
+    tags: ["Azure ML", "FastAPI", "Docker", "U-Net", "CI/CD"],
+    image: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&auto=format&fit=crop&q=80",
+    link: "https://github.com/marwamousa240020/projects/tree/main/npec-vision-mlops",
+  },
 ];
 
 const Projects = () => {
